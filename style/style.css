@@ -29,8 +29,36 @@ body {
           filter: blur(0);
 }
 
+.showcase:hover .content {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.content {
+  height: 350px;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+}
+
 .content .logo {
   height: 180px;
   width: 180px;
+}
+
+.content-title {
+  line-height: 1;
+  margin: 1rem;
+}
+
+.content-text {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */
